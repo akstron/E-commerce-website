@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 import PropTypes from 'prop-types';
 
 const Product = (props) => {
-  const value = useContext(ProductContext);
+  	const value = useContext(ProductContext);
 
 	const { id, title, img, price, inCart } = props.product;
 
@@ -14,7 +14,7 @@ const Product = (props) => {
 			<div className="card">
 				<div
 					className="img-container p-5"
-					onClick={() => value.handleDetail(id)}
+					onClick={() => value.handleDetails(id)}
 				>
 					<Link to="/details">
 						<img src={img} alt="" className="card-img-top" />
