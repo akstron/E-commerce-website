@@ -16,7 +16,7 @@ function ProductList() {
                 {
                     value.products.map((product) => {
                         return (
-                            <Product product={product}/>
+                            <Product key={product.id} product={product}/>
                         )
                     })
                 }
